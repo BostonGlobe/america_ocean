@@ -11,38 +11,6 @@
 
 
 // Country labels //
-#country_label[zoom>=3] {
-  text-name: @name;
-  text-face-name: @sans;
-  text-fill: @majortext;
-  text-size: 12;
-  text-halo-fill: @majortexthalo;
-  text-halo-radius: 1;
-  text-wrap-width: 50;
-  [zoom>=3][scalerank=1],
-  [zoom>=4][scalerank=2],
-  [zoom>=5][scalerank=3],
-  [zoom>=6][scalerank>3] {
-    text-size: 14;
-  }
-  [zoom>=4][scalerank=1],
-  [zoom>=5][scalerank=2],
-  [zoom>=6][scalerank=3],
-  [zoom>=7][scalerank>3] {
-    text-size: 16;
-  }
-  [zoom>=6][scalerank=1],
-  [zoom>=7][scalerank=2],
-  [zoom>=8][scalerank>=3] {
-    text-size: 20;
-  }
-}
-
-#country_label_line { 
-  line-color: @majortext;
-  line-dasharray: 3,3;
-  line-width: 1;
-}
 
 // State labels //
 #sstate_label { 
@@ -67,10 +35,10 @@
 //  shield-name: [name_en] + ', ' + [localrank] + ', ' + [scalerank];
   shield-name: [name_en];
   shield-face-name: @sans;
-  shield-size: 14;
+  shield-size: 15;
   shield-fill: @text;
-  shield-halo-fill: @land;
-  shield-halo-radius: 1;
+  shield-halo-fill: @land_mix;
+  shield-halo-radius: 1.5;
   shield-unlock-image: true;
   shield-file: url("dot.svg");
   shield-wrap-width: 80;
@@ -79,14 +47,14 @@
   
 
   // Fine-tune label positioning.
-  [ldir='E'] { shield-text-dx: 6; }
-  [ldir='W'] { shield-text-dx: -6; }
-  [ldir='N'] { shield-text-dy: -5; }
-  [ldir='S'] { shield-text-dy: 6; }
-  [ldir='NE'] { shield-text-dx: 3; shield-text-dy: -3; }
-  [ldir='SE'] { shield-text-dx: 3; shield-text-dy: 3; }
-  [ldir='SW'] { shield-text-dx: -3; shield-text-dy: 3; }
-  [ldir='NW'] { shield-text-dx: -3; shield-text-dy: -3; }
+  [ldir='E'] { shield-text-dx: 8; }
+  [ldir='W'] { shield-text-dx: -8; }
+  [ldir='N'] { shield-text-dy: -7; }
+  [ldir='S'] { shield-text-dy: 8; }
+  [ldir='NE'] { shield-text-dx: 8; shield-text-dy: -2; }
+  [ldir='SE'] { shield-text-dx: 6; shield-text-dy: 6; }
+  [ldir='SW'] { shield-text-dx: -7; shield-text-dy: 4; }
+  [ldir='NW'] { shield-text-dx: -7; shield-text-dy: -4; }
 
 //  [zoom>=6] { shield-size: 14; }
 

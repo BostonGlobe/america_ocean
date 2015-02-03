@@ -6,8 +6,10 @@
 
 // Color palette //
 @road:  #fff;
-@land:  #eee;
-@land: rgb(239, 239, 239);
+//@land:  #eee;
+//@land: rgb(239, 239, 239);
+@land: white;
+@land_mix: rgb(247, 247, 247);
 
 @minortext: #666;
 @minortexthalo: white;
@@ -37,8 +39,8 @@ Map {
 // Water Features //
 #america_water {
   ::shadow {
-    polygon-fill: mix(@land,@fill4,75);
-    line-color: mix(@land,@fill4,75);
+    polygon-fill: mix(@land,@fill3,75);
+    line-color: mix(@land,@fill3,75);
   }
   ::fill {
     // a fill and overlay comp-op lighten the polygon-
@@ -47,7 +49,7 @@ Map {
     comp-op: soft-light;
     // blurring reveals the polygon fill from ::shadow around
     // the edges of the water
-    image-filters: agg-stack-blur(10,10);
+    image-filters: agg-stack-blur(3,3);
   }
 }
 
