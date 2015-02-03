@@ -1,0 +1,27 @@
+_prefs: 
+  saveCenter: true
+_properties: 
+  bridge: 
+    "group-by": layer
+attribution: "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -72.9987
+  - 41.9472
+  - 8
+description: A monotone basemap that's easy to recolor.
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 10
+minzoom: 5
+name: Mapbox Light
+source: "mapbox:///gabriel-florit.8lwel8fr,gabriel-florit.19720588,mapbox.mapbox-streets-v5,gabriel-florit.yq6hto6r"
+styles: 
+  - style.mss
+  - labels.mss
+template: ''
