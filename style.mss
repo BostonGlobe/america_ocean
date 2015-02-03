@@ -14,7 +14,7 @@
 @minortext: #666;
 @minortexthalo: white;
 
-@majortext: black;
+@majortext: #555;
 @majortexthalo: white;
 
 @text: @majortext;
@@ -56,3 +56,8 @@ Map {
 // Water color is calculated by sampling the resulting color from
 // the soft-light comp-op in the #water layer style above. 
 @water: #d1d1d1;
+
+#merged {
+  line-color: mix(@land,@fill3,75);
+//  line-dasharray: 2, 2;
+}

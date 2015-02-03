@@ -10,17 +10,17 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -71.7188
-  - 41.9186
-  - 7
+  - -71.0575
+  - 42.4544
+  - 11
 description: A monotone basemap that's easy to recolor.
 format: "png8:m=h"
 interactivity_layer: ''
 layers: null
-maxzoom: 10
+maxzoom: 11
 minzoom: 5
 name: Mapbox Light
-source: "mapbox:///gabriel-florit.8lwel8fr,gabriel-florit.19720588,mapbox.mapbox-streets-v5,gabriel-florit.yq6hto6r"
+source: "mapbox:///gabriel-florit.8lwel8fr,gabriel-florit.19720588,gabriel-florit.a4d9a42e,mapbox.mapbox-streets-v5,gabriel-florit.yq6hto6r"
 styles: 
   - style.mss
   - labels.mss

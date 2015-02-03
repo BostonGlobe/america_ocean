@@ -1,38 +1,25 @@
-#sOGRGeoJSON {
+#OGRGeoJSON {
   text-name: '[snowfall]';
-  text-face-name: @sans;
-  text-fill: @majortext;
+  text-face-name: @sans_bold;
+  text-fill: black;
   text-size: 18;
-  text-halo-fill: @majortexthalo;
+  text-halo-fill: @land_mix;
   text-halo-radius: 1.5;
-  text-wrap-width: 50;
-  text-min-distance: 20;
+//  text-wrap-width: 50;
+  text-min-distance: 30;
 }
-
-
-// Country labels //
-
-// State labels //
-#sstate_label { 
-  text-name: @name;
-  text-face-name: @sans;
-  text-fill: @minortext;
-  text-size: 12;
-  text-halo-fill: @minortexthalo;
-  text-halo-radius: 1;
-  text-wrap-width: 50;
-}
-
 
 #place_label[zoom=5][scalerank<=1],
 #place_label[zoom=6][scalerank<=2],
 #place_label[zoom=7][scalerank<=4],
-#place_label[zoom=8][scalerank<=6],
+#place_label[zoom=8][scalerank<=7],
+#place_label[zoom=9][localrank<=1],
+#place_label[zoom=10][localrank<=1],
+#place_label[zoom=11][localrank<=1],
 #place_label[type='citys'][localrank=2][zoom>=5][zoom<10],
 #place_label[type='citys'][localrank=3][zoom>=7][zoom<10],
 #place_label[type='citys'][localrank>=4][localrank>9][zoom>=8][zoom<10],
 #place_label[type='towns'][localrank<=1][zoom>=9][zoom<10] {
-//  shield-name: [name_en] + ', ' + [localrank] + ', ' + [scalerank];
   shield-name: [name_en];
   shield-face-name: @sans;
   shield-size: 15;
